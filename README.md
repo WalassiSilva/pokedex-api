@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Pokédex API 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Quest React Avançado - DevQuest 
 
-## Available Scripts
+### Demonstração Desktop 
+<img src='./public/imgs/overview.gif'>
 
-In the project directory, you can run:
+### Demonstração Mobile
+<img src='./public/imgs/overview-mobile.gif'>
 
-### `npm start`
+### Descrição do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Esse projeto tem como objetivo testar os conhecimentos adquiridos no curso como um todo.
+Nesse será explorado: 
+- API para extrair informações dos pokmeons
+- React para trabalhar com componentes
+- React Router DOM para alternar entre páginas
+- Single Page Application (SPA)
+- Styled Components para fazer toda estilização
+- Context API para alterar tema e salvá-lo no local storage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O projeto consiste em puxar as infomações da API (PokeApi) através de diferentes endpoints e renderizar na tela:
 
-### `npm test`
+- Cabaçalho
+    - Logo do pokemon para voltar para pagina inicial
+    - Botão para trocar entre tema claro e securo 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Página inicial
+    - Uma lista de 10 pokemons inicialmente
+    - Carregar mais pokemons com clique de botão
+    - Buscar um pokemon pelo nome ou pelo id
+    - Filtrar pokemons pelo tipo ou pelo nome
+    - Mostrar
 
-### `npm run build`
+- Pagina de detalhes
+    - Mostrar nome, id, tipos e imagem diferente do pokemon
+    - Altura e peso
+    - Habilidades e suas descrições
+    - Lista de movimentos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### O que aprendi
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A parte mais importante e desafiadora desse projeto, certamente foi trabalhar com a API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Foi necessário diversos endpoints para buscar um pokemon, as informações do pokemon, a lista de pokemons e suas hablidades.
+Trabalhar com async functions e Promise.all para aguardar o retorno da API.
 
-### `npm run eject`
+Passar temas através do Context API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Buscar propriedades do tema dentro de um styled component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Gerenciar as páginas com React Router DOM.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Como executar o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1 - Clone do repositório através do link: 
+```
+``` 
+2 - Abra o projeto via terminal ou pela IDE
+3 - Instale a dependências do projeto:
+```
+npm install
+```
+4 - De start no Projeto
+```
+npm start
+```
+5 - Acesse o link do localhost com ctrl + clique
