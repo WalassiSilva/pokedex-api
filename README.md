@@ -53,8 +53,9 @@ Gerenciar as páginas com React Router DOM.
 
 ### Como executar o projeto
 
-1 - Clone do repositório através do link: 
+1 - Clone do repositório através do link ou faça o download ZIP: 
 ```
+https://github.com/WalassiSilva/pokedex-api.git
 ``` 
 2 - Abra o projeto via terminal ou pela IDE
 3 - Instale a dependências do projeto:
