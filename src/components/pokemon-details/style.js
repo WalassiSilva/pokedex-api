@@ -42,7 +42,7 @@ export const Card = styled.div`
 export const Types = styled.div`
     display: flex;
     justify-content: center;
-    `;
+`;
 
 export const Type = styled.p`
     width: 45%;

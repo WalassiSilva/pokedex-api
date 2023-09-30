@@ -13,6 +13,7 @@ export const List = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 
     h3{
         background-color: ${props => props.theme.bgColor};
@@ -21,6 +22,5 @@ export const List = styled.ul`
         border: 1px solid ;
         margin: 15px 0;
     }
-
 `;
 

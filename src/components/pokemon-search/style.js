@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Search = styled.div`
-    input{
+    input {
         padding: 5px;
         border: 1px solid transparent;
         border-radius: 5px;
@@ -15,11 +15,10 @@ export const Search = styled.div`
         &::placeholder{
             color: ${props => props.theme.color};
         
-        }
-
-    
+        }    
     }
-    button{
+
+    button {
         border-radius:5px;
         background-color: transparent;
         border: 1px solid transparent;
@@ -32,5 +31,4 @@ export const Search = styled.div`
     }
 `;
 
-export const PokemonResult = styled.div`
-`
+export const PokemonResult = styled.div``;

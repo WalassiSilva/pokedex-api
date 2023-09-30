@@ -13,6 +13,5 @@ export const Btn = styled.button`
 
     &:hover{        
         transform: scale(1.1);
-    }
-    
-`
+    }   
+`;

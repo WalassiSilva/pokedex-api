@@ -11,8 +11,7 @@ export const Header = styled.header`
     padding: 8px;
     position: sticky;
     top: 0;
-    
-    
+        
     img{
         height: 100%;
         max-width: 150px;
@@ -43,5 +42,4 @@ export const Header = styled.header`
             transform: scale(0);
         }
     }
-
-`
+`;

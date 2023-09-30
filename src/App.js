@@ -15,8 +15,6 @@ function App() {
   );
 }
 
-
-
 const GlobalStyles = createGlobalStyle`
 * {
   margin: 0;

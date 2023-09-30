@@ -8,7 +8,6 @@ export const Card = styled.div`
     padding: 8px 0;
     border-radius: 10px;
     justify-content: center;
-    margin: 20px;
     transition: 0.2s ease;
 
     &:hover {
@@ -18,15 +17,13 @@ export const Card = styled.div`
 
     img{
         max-width: 100%;
-    }
-
-    
+    }    
 `;
 
 export const Types = styled.div`
     display: flex;
     justify-content: center;
-    `;
+`;
 
 export const Type = styled.p`
     width: 45%;

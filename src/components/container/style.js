@@ -6,9 +6,7 @@ export const Container = styled.div`
     height: 100dvh; 
     overflow: scroll;
     overflow-x: hidden;
-    height: '100vh';
     color: ${props => props.theme.color};
-    background: url(${props => props.theme.bgImage}) center center repeat;
     background: url(${props => props.theme.bgImage}) ${props => props.theme.position};
     position: relative;
     transition: all 0.3s ease;
@@ -20,5 +18,4 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-position: center bottom;
     }
-
-    `
+`;
