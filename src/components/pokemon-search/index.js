@@ -9,11 +9,21 @@ const PokemonSearch = ({ inputValue, setInputValue, onSearchBtn, ...rest }) => {
     const [{ theme }] = useContext(ThemeContext)
     const [pokemon, setPokemon] = useState('');
     const [disableBtn, setDisableBtn] = useState(true)
+    const [notFound, setNotFound] = useState(false);
 
     const handleBtnSearch = () => {
         const fetchData = async () => {
 
-            const result = await getPokemon(inputValue)
+            const result = await getPokemon(inputValue);
+            setNotFound(false);
+            setPokemon(null);
+
+
+            if (!result) {
+                setNotFound(true);
+                return;
+            }
+
             setPokemon(result);
             return await result;
         }
@@ -27,6 +37,7 @@ const PokemonSearch = ({ inputValue, setInputValue, onSearchBtn, ...rest }) => {
         } else {
             setDisableBtn(true);
             setPokemon(undefined);
+            setNotFound(false)
         }
     }
 
@@ -39,8 +50,8 @@ const PokemonSearch = ({ inputValue, setInputValue, onSearchBtn, ...rest }) => {
                 type='search'
                 autoFocus />
 
-            <button disabled={disableBtn} onClick={handleBtnSearch} 
-            style={{ cursor: disableBtn ?  'not-allowed' : 'pointer'}}
+            <button disabled={disableBtn} onClick={handleBtnSearch}
+                style={{ cursor: disableBtn ? 'not-allowed' : 'pointer' }}
             >🔍</button>
 
             <S.PokemonResult>
@@ -50,10 +61,12 @@ const PokemonSearch = ({ inputValue, setInputValue, onSearchBtn, ...rest }) => {
                             id={pokemon.id} name={pokemon.name}
                             sprite={pokemon.sprites.front_default}
                             types={pokemon.types}
-                        /> 
-                    </Link> 
+                        />
+                    </Link>
                 ) : null
-            }
+                }
+
+                {notFound && <S.NotFound>😢 Busca inválida! 😢 </S.NotFound>}
             </S.PokemonResult>
         </S.Search>
 

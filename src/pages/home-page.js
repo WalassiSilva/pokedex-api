@@ -8,23 +8,27 @@ const Home = () => {
 
   const [pokemons, setPokemons] = useState([]);
   const [loading, setLoading] = useState(true);;
-  const [pokePerPage, setPokePerPage] = useState(10);
   const [type, setType] = useState('');
   const [inputValue, setInputValue] = useState('');
 
+  const paginationLimit = 10;
+  const [paginationOffset, setPaginationOffset] = useState(0);
+
+  
   useEffect(() => {
     const getPokemonsData = async () => {
-      const pokemonData = await getPokemonList(pokePerPage);
+      const pokemonData = await getPokemonList(paginationLimit, paginationOffset);
+
       const results = await Promise.all(pokemonData.map(async (pokemon) => {
         return await getPokemon(pokemon.name);
       }))
 
-      setPokemons(results);
+      setPokemons([...pokemons, ...results]);
       setLoading(false);
     }
 
     getPokemonsData();
-  }, [pokePerPage])
+  }, [paginationOffset])
 
   const filterPokemons = (pokemons) => {
     return pokemons.filter(pokemon => {
@@ -37,7 +41,7 @@ const Home = () => {
 
 
   const handleClick = () => {
-    setPokePerPage(prev => prev + 10);
+    setPaginationOffset(paginationOffset + paginationLimit)
   }
 
   const clearPage = () => {

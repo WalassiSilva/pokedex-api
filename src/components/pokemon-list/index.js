@@ -6,7 +6,10 @@ import { Button } from "../button";
 import * as S from './style';
 
 const PokemonList = ({ loading, pokemons, filterPokemons, handleClick }) => {
+
     const [{ theme }] = useContext(ThemeContext);
+    
+
     return (
         <S.Container theme={theme}>
             {
@@ -31,7 +34,7 @@ const PokemonList = ({ loading, pokemons, filterPokemons, handleClick }) => {
                                         )
                                     })
                                     : null
-                                    // <h3>Pokemon não encontrado no filtro. Tente a Lupa </h3>
+                                // <h3>Pokemon não encontrado no filtro. Tente a Lupa </h3>
                             }
                         </S.List>
                         <Button onClick={handleClick}>Carregar mais</Button>

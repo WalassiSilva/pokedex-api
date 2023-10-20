@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const Card = styled.div`
 
     background-color: ${props => props.theme.cardColor};
-    width: 150px;
+    width: 170px;
     height: 170px;
     text-align: center;
     padding: 8px 0;

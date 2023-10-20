@@ -31,4 +31,14 @@ export const Search = styled.div`
     }
 `;
 
-export const PokemonResult = styled.div``;
+export const NotFound = styled.div`
+background-color: #f007;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+
+`;
+
+export const PokemonResult = styled.div`
+    margin: 20px 0;
+`;

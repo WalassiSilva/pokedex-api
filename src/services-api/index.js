@@ -12,9 +12,10 @@ async function getPokemon(pokemon) {
 
 }
 
-async function getPokemonList(limit) {
+async function getPokemonList(limit, offset) {
     try {
-        const response = await fetch(`${baseUrl}?limit=${limit}`);
+        const response = await fetch(`${baseUrl}?limit=${limit}&offset=${offset}`);
+        console.log(offset);
         const data = await response.json();
         return data.results;
     } catch (error) {

@@ -79,6 +79,7 @@ export const AbilitiesContainer = styled.section`
     margin: 15px;
     padding: 15px;
     border-radius: 5px;
+    height: 250px;
     max-width: 750px;
 
 `;
@@ -88,7 +89,7 @@ export const MovesContainer = styled.section`
     padding: 15px;
     border-radius:5px ;
     max-width: 750px;
-    height: 450px;
+    height: 250px;
     overflow: scroll;
     overflow-x: hidden;
 
