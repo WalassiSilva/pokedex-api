@@ -80,6 +80,8 @@ export const AbilitiesContainer = styled.section`
     padding: 15px;
     border-radius: 5px;
     height: 250px;
+    overflow: scroll;    
+    overflow-x: hidden;
     max-width: 750px;
 
 `;
