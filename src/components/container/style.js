@@ -12,8 +12,7 @@ export const Container = styled.div`
     transition: all 0.3s ease;
 
     @media (max-width: 425px) {
-    background: red ;
-    background: url(${props => props.theme.bgImageSmall}) ${props => props.theme.positionSmall};;
+    background: url(${props => props.theme.bgImageSmall}) ${props => props.theme.positionSmall};
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;

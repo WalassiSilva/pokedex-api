@@ -4,24 +4,26 @@ import * as S from './style';
 
 const PokemonDetails = ({ id, name, sprite, types, abilities, moves, pokemon }) => {
     const [{ theme, colorTypes }] = useContext(ThemeContext);
-  
+
     return (
         <S.Container theme={theme}>
 
 
             <S.Card theme={theme}>
-                <h1 
+                <h1
                 >#{id} - {name}</h1>
-                <img src={sprite} alt={name} />
-                <S.Types style={{background: theme.colorTypes}}>
+                <S.Img theme={theme}>
+                    <img src={sprite} alt={name} />
+                </S.Img>
+                <S.Types style={{ background: theme.colorTypes }}>
                     {
                         types?.map((type, index) => {
                             return (
-                                <S.Type style={{background: colorTypes[type.type.name]}} 
-                                theme={theme} 
-                                key={index}
-                               >
-                                    {type.type.name} 
+                                <S.Type style={{ background: colorTypes[type.type.name] }}
+                                    theme={theme}
+                                    key={index}
+                                >
+                                    {type.type.name}
                                 </S.Type>
                             )
                         })

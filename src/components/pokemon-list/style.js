@@ -13,7 +13,7 @@ export const List = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 50px 20px ;
 
     h3{
         background-color: ${props => props.theme.bgColor};

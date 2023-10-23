@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import * as S from './style';
 import { ThemeContext } from '../../constexts/theme-context';
+import * as S from './style';
 
 const PokemonCard = ({ id, name, sprite, types }) => {
     const [{ theme, colorTypes }] = useContext(ThemeContext);
@@ -8,7 +8,9 @@ const PokemonCard = ({ id, name, sprite, types }) => {
         <S.Card
             theme={theme}>
             <h4># {id} {name}</h4>
-            <img src={sprite} alt={name} />
+            <S.Img theme={theme} >
+                <img src={sprite} alt={name} />
+            </S.Img>
             <S.Types>
                 {
                     types.map((type, index) => {

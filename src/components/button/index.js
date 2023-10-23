@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import * as S from './style';
 import { ThemeContext } from '../../constexts/theme-context';
+import * as S from './style';
 
 const Button = (props) => {
     const [{theme}] = useContext(ThemeContext)

@@ -3,6 +3,7 @@ import bg1 from '../../assets/bg1.jpg';
 import bg2 from '../../assets/bg2.jpg';
 import bgm1 from '../../assets/bgm1.jpg'
 import bgm2 from '../../assets/bgm2.jpg'
+import pokeball from '../../assets/pokeball.png'
 
 export const themes = {
     light: {
@@ -14,6 +15,7 @@ export const themes = {
         positionSmall: 'center center no-repeat',
         cardColor: '#d8e3ecd0',
         hoverColor: '#86b6b4dd',
+        pokeball: pokeball
        
     },
     dark: {
@@ -24,7 +26,8 @@ export const themes = {
         bgImageSmall:bgm2,
         positionSmall: 'center top no-repeat ',
         cardColor: '#a8a8a8d0',
-        hoverColor: '#86b6b4dd',            
+        hoverColor: '#86b6b4dd',
+        pokeball: pokeball            
     },
 }
 

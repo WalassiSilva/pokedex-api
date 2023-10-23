@@ -35,7 +35,7 @@ const Details = () => {
         <PokemonDetails theme={theme}
           id={pokemon.details.id}
           name={pokemon.details.name}
-          sprite={pokemon.details.sprites?.other.dream_world.front_default ?? pokemon.details.sprites?.front_default }
+          sprite={pokemon.details.sprites?.front_default ?? pokemon.details.sprites?.front_default }
           types={pokemon.details.types}
           abilities={pokemon.abilities}
           moves={pokemon.details.moves}

@@ -2,8 +2,8 @@ import styled from "styled-components";
 export const Card = styled.div`
 
     background-color: ${props => props.theme.cardColor};
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 280px;
     text-align: center;
     padding: 8px 0;
     border-radius: 10px;
@@ -14,10 +14,22 @@ export const Card = styled.div`
         background-color: ${props => props.theme.hoverColor};
         transform: translateY(-10px);
     }
+       
+`;
 
-    img{
+export const Img = styled.div`
+    align-items: center;
+    background: url(${props => props.theme.pokeball});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin: 5px 0;
+
+    img {
+        padding: 15px;
         max-width: 100%;
-    }    
+    }
 `;
 
 export const Types = styled.div`

@@ -59,7 +59,7 @@ const PokemonSearch = ({ inputValue, setInputValue, onSearchBtn, ...rest }) => {
                     <Link to={`/details/${pokemon.id}`}>
                         <PokemonCard
                             id={pokemon.id} name={pokemon.name}
-                            sprite={pokemon.sprites.front_default}
+                            sprite={pokemon.sprites.other['official-artwork'].front_default}
                             types={pokemon.types}
                         />
                     </Link>

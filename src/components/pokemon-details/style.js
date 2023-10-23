@@ -11,7 +11,7 @@ export const Container = styled.section`
     gap: 15px;
 
     h1{
-        background-color: ${props => props.theme.bgColor}d;
+        background-color: ${props => props.theme.cardColor};
         padding: 10px;
         border-radius: 15px;
     }
@@ -23,20 +23,26 @@ export const Container = styled.section`
 `;
 
 export const Card = styled.div`
-    width: 200px;
-    height: 250px;
     text-align: center;
     padding: 8px 0;
     border-radius: 10px;
     justify-content: center;
     margin: 20px;
     transition: 0.2s ease;
+`;
+export const Img = styled.div`
+    align-items: center;
+    background: url(${props => props.theme.pokeball});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px;
+    margin: 5px 0;
 
     img{
         max-width: 100%;
-        padding: 15px 0;        
-    }
-    
+        padding: 15px;        
+        }
 `;
 
 export const Types = styled.div`
